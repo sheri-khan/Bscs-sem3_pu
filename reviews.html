@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reviews - BSCS Semester 3</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.0.2/dist/supabase.min.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <h1>BSCS Semester 3</h1>
+        <nav class="top-nav">
+            <a href="index.html">Home</a>
+            <a href="past_papers.html">Past-papers</a>
+            <a href="contact.html">Contact Us</a>
+
+            <a href="reviews.html">Reviews</a>
+            <a href="faq.html">FAQ</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="horizontal-layout">
+            <!-- <nav class="horizontal-nav">
+                <h2>Reviews</h2>
+                <a href="#write-review">Write a Review</a> <br>
+                <a href="#view-reviews">View Reviews</a>
+            </nav> -->
+            <p style="font-size: 20px;color: rgb(3, 26, 26);text-align: center;">
+                Guys be honest while giving a review. Your review is very helpful for us <br>
+                to build our website more releastic and user friendly. 
+            </p>
+              
+            <div class="content">
+                <section id="write-review" class="subject-section">
+                    <h2>Write a Review</h2>
+                    <form id="review-form">
+                        <input type="text" name="name" placeholder="Name" required>
+                        <textarea name="review" placeholder="Review" required></textarea>
+                        <input type="number" name="rating" placeholder="Rating" min="1" max="5" required>
+                        <button type="submit">Submit</button>
+                    </form>
+                </section>
+
+                <section id="view-reviews" class="subject-section">
+                    <h2>View Reviews</h2>
+                    <p>Here you can view the reviews submitted by other users.</p>
+                    <!-- Example reviews -->
+                    <!-- <div class="review-item">
+                        <p><strong>John Doe</strong> (Rating: 4):</p>
+                        <p>Great resource for learning!</p>
+                    </div>
+                    <div class="review-item">
+                        <p><strong>Jane Smith</strong> (Rating: 5):</p>
+                        <p>Highly recommended for anyone studying these subjects.</p>
+                    </div> -->
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <h2 class="footer_h2">2024 &copy; Sheri.in Design  All Rights Reserved.</h2>
+        <div class="footer-links">
+            <a id="footer-a" href="past_papers.html">Past-papers</a>
+            <a id="footer-a" href="faq.html">FAQ</a>
+            <a id="footer-a" href="contact.html">Contact Us</a>
+            <a id="footer-a" href="reviews.html">Reviews</a>
+        </div>
+        <div class="footer-contact">
+            <a style="color: white;" href="https://wa.me/+923486233198" target="_blank">
+                <i  class="fab fa-whatsapp"></i> Contact us on WhatsApp
+            </a>
+        </div>
+    </footer>
+    
+    <script src="scripts.js" ></script>
+    <!-- <script type="module" src="scripts.js"></scri> -->
+
+</body>
+
+</html>

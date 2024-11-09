@@ -1,0 +1,519 @@
+@import url('https://fonts.googleapis.com/css2?family=Baskervville+SC&display=swap');   /* font-family: "Baskervville SC", serif; */
+@import url('https://fonts.googleapis.com/css2?family=Baskervville+SC&family=SUSE:wght@100..800&display=swap');/* font-family: "SUSE", sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Baskervville+SC&family=Nerko+One&family=SUSE:wght@100..800&display=swap'); /*  font-family: "Nerko One", cursive;*/
+
+
+/* General Styles */
+* {
+    box-sizing: border-box;
+}
+#horizontal-nav_h2{
+    font-size: 20px;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e9ecef;
+    color: #333;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+header {
+    /* background-color: #0b340c; */
+    background-color: #5d3b13;
+    opacity: 0.90;
+    color: #ffffff;
+    padding: 5px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%; /* Ensure the header fits the screen width */
+}
+.header-h1{
+    
+    font-size: 30px;
+    /* background-color: black; */
+    margin-top: 40px;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    
+}
+.top-nav {
+    display: flex;
+    justify-content: center;
+    /* flex-direction: column;  it define that all the elements are placed in a coulmn from top to bottom */
+    flex-wrap: wrap;
+    /* background-color: #000000; */
+    background-color: #35270a;
+    width: 100%; /* Ensure the navigation bar fits the screen width */
+
+}
+.top-nav:hover{
+    /* background-color: #fff; */
+    transform: translateY(-10px);
+   
+}
+
+ .top-nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 10px;
+    
+    
+}
+.top-nav a:hover {
+    transition: 0.5s;
+    
+    background-color: white;
+   
+    color: black;
+    border-radius: 10px;
+} 
+
+
+
+/* past paper nav  */
+#past-paper-nav{
+    margin-top: 10px;
+    text-decoration: none;
+    /* color: #eb5312; */
+    color: #97610d;
+    display: flex;
+    flex-direction: column;
+    /* margin-left: 25px; */
+    border: 2px solid black;
+    /* border-radius: 10px; */
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    padding: 9px;
+}
+#past-paper-nav:hover{
+    color: rgb(0, 0, 0);
+    background-color:white;
+}
+
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+    padding-bottom: 60px; /* Adjust padding to avoid overlap with fixed footer */
+}
+
+.sidebar {
+   
+    width: 250px;
+    /* background-color: #343a40; */
+    background-color: #655640;
+    color: #ffffff;
+    padding: 5px;
+    overflow-y: auto;
+    flex-shrink: 0; /* Prevent shrinking of sidebar on smaller screens */
+}
+
+.sidebar h2 {
+    margin-top: 0;
+    text-align: center;
+    background-color: rgb(75, 165, 195);
+    border-radius: 10px;
+    padding: 3px;
+}
+
+.sidebar a {
+    display: flex;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 0;
+    
+}
+
+.sidebar a:hover {
+    transition: 0.5s;
+    /* background-color: rgb(75, 165, 195); */
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    color: black;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    width: 100%; /* Ensure content width fits the screen */
+}
+.content_h1{
+    font-family: "Baskervville SC", serif;
+    text-align: center;
+    font-size: 40px;
+    text-decoration: underline;
+    /* background-color:  #343a40; */
+    background-color: #5d3b13;
+    color: white;
+    border-radius: 10px;
+}
+.content_p{
+    font-family: "SUSE", sans-serif;
+    text-align: center;
+    font-size: 20px;
+    border: dotted  black;
+    padding: 20px;
+}
+
+.subject-section {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Ensure sections fit the screen width */
+}
+#notes-youtube-link{
+    font-size: 25px;
+    text-align: center;
+    color: red;
+}
+#notes-youtube-link-here{
+    width: 100%;         /* Set the width of the div */
+    padding: 17px;        /* Add some padding inside the div */
+    background-color: #f9f9f9; /* Light background color */
+    border-radius: 10px;  /* Rounded corners for a smoother look */
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.2),
+                inset -5px -5px 10px rgba(255, 255, 255, 0.8); 
+    /* Inset shadow to create the "pressed" effect */
+
+}
+#notes-youtube-link-here-a{
+    text-decoration: none;
+    font-size: 18px;
+}
+
+
+
+/* h4, h5, p {
+    width: 100%; /* Ensure all headings and paragraphs fit the screen width 
+    /*text-align: center; Center the text for better readability 
+}*/
+h5{
+    
+    border: solid black;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 20px;
+}
+h2{
+    
+    font-size: 25px;
+}
+h4{
+    text-align: center;
+    font-size: 20px;
+}
+#sidebar-h2{
+    font-size: 18px;
+}
+
+
+img {
+    max-width: 100%; /* Ensure images scale to fit within the screen */
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Center images horizontally */
+    border-bottom: dotted black;
+    border-width: 5px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%; /* Ensure forms fit within the screen */
+    margin: auto;
+}
+
+label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input, textarea, select {
+    padding: 10px;
+    margin-top: 22px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%; /* Ensure input elements fit the screen width */
+}
+
+/* button {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%; 
+}
+
+button:hover {
+    background-color: #0056b3;
+} */
+/* From Uiverse.io by cssbuttons-io */ 
+button {
+    /* --color: #560bad; */
+    --color: #174c10;
+    font-family: inherit;
+    display: inline-block;
+    width: 8em;
+    height: 2.6em;
+    line-height: 2.5em;
+    margin: 20px;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    border: 2px solid var(--color);
+    transition: color 0.5s;
+    z-index: 1;
+    font-size: 17px;
+    border-radius: 6px;
+    font-weight: 500;
+    color: var(--color);
+  }
+  
+  button:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: var(--color);
+    height: 150px;
+    width: 200px;
+    
+    border-radius: 50%;
+  }
+  
+  button:hover {
+    color: #fff;
+  }
+  
+  button:before {
+    top: 100%;
+    left: 100%;
+    transition: all 0.7s;
+  }
+  
+  button:hover:before {
+    top: -30px;
+    left: -30px;
+  }
+  
+  button:active:before {
+    background: #3a0ca3;
+    /* background: #174c10; */
+    transition: background 0s;
+  }
+   
+/* footer styling */
+footer {
+    /* background-color: #343a40; */
+    
+    opacity: 0.90;
+    color: #ffffff;
+    text-align: center;
+    /* padding: 1px; */
+    width: 100%; /* Ensure the footer fits the screen width */
+    text-align: center;
+    padding: 1rem;
+    /* background-color: #0b340c; */
+    background-color: #593f08;
+    margin-top: 2rem;
+}
+
+/* Ensure the footer links are accessible */
+
+.footer_h2{
+    font-size: 15px;
+    padding: 0%;
+}
+.footer-links{
+    display: flex;
+    flex-direction: column;
+}
+#footer-a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#footer-a:hover {
+    /* background-color: rgb(75, 165, 195); */
+    background-color: white;
+    color: black;
+    padding: 5px;
+    /* color: rgb(75, 165, 195); */
+    text-decoration: none;
+}
+.footer-contact a i {
+    font-size: 24px;
+    margin-right: 8px;
+    color: #25D366; /* WhatsApp's green color */
+}
+
+                /* .faq-section, .contact-section, .rating-section, .reviews-section */
+.faq-section, .contact-section, .rating-section, .reviews-section {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Ensure sections fit the screen width */
+}
+.contact-section{
+    margin-bottom: 357px;
+}
+
+.review-item {
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column;
+        margin: 10px;
+        padding-bottom: 60px; /* Adjust padding to avoid overlap with fixed footer */
+    }
+
+    .sidebar {
+        width: 100%; /* Ensure sidebar fits the screen width on smaller devices */
+        margin-bottom: 20px;
+    }
+    /* .horizontal-nav{
+        
+        width: 100px;
+        margin-bottom: 20px;
+        
+    } */
+   
+
+    .content {
+        margin: 0;
+        padding: 10px;
+    }
+
+    header {
+        padding: 8px;
+    }
+
+    .top-nav a {
+        margin: 0 5px;
+        padding: 8px;
+    }
+
+    h2, h4, h5 {
+        font-size: 18px;
+    } 
+     
+  
+
+    form, #review-form {
+        max-width: 100%;
+        margin: 10px auto;
+        padding: 10px;
+    }
+
+    footer {
+        padding: 0px;
+    }
+}
+#anote{
+    /* background-color: rgb(160, 229, 238); */
+    color: #3f0ac5;
+    display: block;
+    
+    margin-top: 20px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 6px;
+        font-size: 16px;
+    }
+
+    .top-nav a {
+        margin: 0 3px;
+        padding: 6px;
+        font-size: 14px;
+    }
+
+    .top-nav {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .main-container, .horizontal-layout {
+        margin: 5px;
+        padding-bottom: 60px; /* Adjust padding to avoid overlap with fixed footer */
+    }
+
+    .sidebar {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        padding: 10px;
+    }
+
+    .sidebar a {
+        display: inline-block;
+        padding: 5px;
+        margin: 0 5px;
+    }
+
+    .content {
+        padding: 5px;
+    }
+
+    h2, h4, h5, p {
+        font-size: 16px;
+    }
+
+    .subject-section {
+        padding: 10px;
+        margin: 5px 0;
+    }
+
+    form, #review-form {
+        max-width: 100%;
+        margin: 5px auto;
+        padding: 5px;
+    }
+
+    input, textarea, select, button {
+        font-size: 14px;
+        padding: 8px;
+        
+    }
+
+    footer {
+        padding: 8px;
+        font-size: 14px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+

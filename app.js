@@ -3,6 +3,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const cors = require('cors');
+const path = require('path');
 require('dotenv').config();
 
 // Initialize Express app
@@ -13,8 +14,11 @@ const PORT = process.env.PORT || 5000;
 app.use(bodyParser.json()); // Parse JSON data
 app.use(cors()); // Allow cross-origin requests
 
+// Serve static files (like CSS, JS) from the main folder
+app.use(express.static(path.join(__dirname))); // This will serve all files in your folder
+
 // MongoDB Connection
-mongoose.connect(process.env.MONGODB_URI, {
+mongoose.connect(process.env.MONGO_URI, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
 })
@@ -38,6 +42,26 @@ const Contact = mongoose.model('Contact', contactSchema);
 const Review = mongoose.model('Review', reviewSchema);
 
 // Routes
+// Serve HTML pages
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, 'index.html'));
+});
+
+app.get('/contact', (req, res) => {
+    res.sendFile(path.join(__dirname, 'contact.html'));
+});
+
+app.get('/faq', (req, res) => {
+    res.sendFile(path.join(__dirname, 'faq.html'));
+});
+
+app.get('/review', (req, res) => {
+    res.sendFile(path.join(__dirname, 'review.html'));
+});
+
+app.get('/pastl-paper', (req, res) => {
+    res.sendFile(path.join(__dirname, 'pastl-paper.html'));
+});
 
 // Contact Us Form Submission
 app.post('/api/contact', async (req, res) => {
@@ -74,4 +98,4 @@ app.get('/api/reviews', async (req, res) => {
 });
 
 // Start the Server
-app.listen(PORT, () => console.log(`Server running on http://localhost:${PORT}`));
+app.listen(PORT, () => console.log(`Server is running on http://localhost:${PORT}`));

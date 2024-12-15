@@ -50,11 +50,7 @@ header {
     width: 100%; /* Ensure the navigation bar fits the screen width */
 
 }
-.top-nav:hover{
-    /* background-color: #fff; */
-    transform: translateY(-10px);
-   
-}
+
 
  .top-nav a {
     color: #ffffff;

@@ -14,7 +14,7 @@ app.use(bodyParser.json()); // Parse JSON data
 app.use(cors()); // Allow cross-origin requests
 
 // MongoDB Connection
-mongoose.connect(process.env.MONGO_URI, {
+mongoose.connect(process.env.MONGODB_URI, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
 })

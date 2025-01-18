@@ -19,30 +19,61 @@
             <a href="reviews.html">Reviews</a>
             <a href="faq.html">FAQ</a>
         </nav>
+        <style>
+            details {
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #fefefe;
+}
+
+details[open] {
+  border-color: #0056b3;
+  background-color: #f0f8ff;
+}
+
+summary {
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  color: #0056b3;
+}
+
+details[open] summary {
+  color: #007bff;
+}
+
+details p {
+  margin-top: 10px;
+  padding-left: 20px;
+  color: #555;
+}
+        </style>
     </header>
 
     <div class="container">
         <section class="faq-section">
-            <h2>Frequently Asked Questions</h2>
-            <div class="faq-item">
-                <h3>1-What is the basic purpose of this website?</h3>
-                <p>This website is basically design for all the student who
-                    felt difficuty in finding notes and past papers for their study.</p>
-            </div>
-            <div class="faq-item">
-                <h3>2- What thing are available in this website?</h3>
-                <p>Here you can get syllabus books notes and other relative material
-                    for your study. This website is also updated time to time as needed. </p>
-            </div>
-            <div class="faq-item">
-                <h3>3- How can I access the notes and past papers?</h3>
-                <p>Notes and past papers for each subject are available on the respective subject pages. Simply navigate
-                    to the subject of interest.</p>
-            </div>
-            <div class="faq-item">
-                <h3>4-How can I contact for further assistance?</h3>
+           
+            <details>
+                <summary>1. What is the basic purpose of this website?</summary>
+                <p>This website is basically designed for all the students who feel difficulty in finding notes and past papers for their study.</p>
+              </details>
+          
+              <details>
+                <summary>2. What things are available on this website?</summary>
+                <p>Here you can get syllabus books, notes, and other relevant material for your study. This website is also updated from time to time as needed.</p>
+              </details>
+          
+              <details>
+                <summary>3. How can I access the notes and past papers?</summary>
+                <p>Notes and past papers for each subject are available on the respective subject pages. Simply navigate to the subject of interest.</p>
+              </details>
+          
+              <details>
+                <summary>4. How can I contact for further assistance?</summary>
                 <p>If you need additional help, please use the Contact Us page to get in touch.</p>
-            </div>
+              </details>
         </section>
     </div>
 
@@ -51,7 +82,7 @@
          <h2 class="footer_h2">2024 &copy; Sheri.in Design  All Rights Reserved.</h2>
          <div class="footer-links">
              <a id="footer-a" href="past_papers.html">Past-papers</a>
-             <a href="assignment.html">Assignments</a>
+             <a id="footer-a" href="assignment.html">Assignments</a>
              <a id="footer-a" href="faq.html">FAQ</a>
              <a id="footer-a" href="contact.html">Contact Us</a>
              <a id="footer-a" href="reviews.html">Reviews</a>

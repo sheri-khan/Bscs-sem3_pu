@@ -184,6 +184,8 @@ header {
 
 }
 #notes-youtube-link-here-a{
+    display: block;
+    margin: 5px 0;
     text-decoration: none;
     font-size: 18px;
 }

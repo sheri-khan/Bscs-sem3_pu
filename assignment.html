@@ -1,119 +1,90 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Past Papers - BSCS Semester 3</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>BSCS Solved Assignments | PU Affiliated Colleges</title>
+    <meta name="description" content="Download solved assignments for BSCS 3rd semester, including OOP, Professional Practices, and Economics. Punjab University affiliated colleges.">
+    <meta name="keywords" content="BSCS assignments, PU solved assignments, OOP assignments, Professional Practices solved, Economics assignment">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script>
+        tailwind.config = { theme: { extend: { colors: { brand: { light: '#3b82f6', DEFAULT: '#1d4ed8', dark: '#1e3a8a' } } } } }
+    </script>
 </head>
+<body class="bg-slate-50 text-slate-800 font-sans flex flex-col min-h-screen">
 
-<body>
-    <header>
-        <h1>BSCS Semester 3</h1>
-        <nav class="top-nav">
-            <a href="index.html">Home</a>
-            <a href="past_papers.html">Past-papers</a>
-            <a href="contact.html">Contact Us</a>
-            <a href="reviews.html">Reviews</a>
-            <a href="faq.html">FAQ</a>
-        </nav>
+    <!-- Navbar -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-xl font-bold text-brand-dark"><i class="fas fa-arrow-left mr-2"></i> Back to Hub</a>
+            <h1 class="font-bold text-slate-700 hidden md:block">Assignments Hub</h1>
+        </div>
     </header>
 
-    <div class="container">
-        <div class="horizontal-layout">
-            <nav class="horizontal-nav">
-                <h2 id="horizontal-nav_h2" style="text-align: center; font-size: 25px;border: solid 2px black;background-color: white;">Assignments</h2>
-                <a id="past-paper-nav" href="#oop-papers">Object Oriented Programming</a>
-                <a id="past-paper-nav" href="#coal-papers">Comp. Organization & Assembly language</a>
-                <a id="past-paper-nav" href="#calculus-papers">Calculus & Analytic Geometry</a>
-                <a id="past-paper-nav" href="#Professional-Practices-papers">Professional Practices</a>
-                <a id="past-paper-nav" href="#economics-papers">Introduction to Economics</a>
-               
-            </nav>
+    <main class="flex-grow container mx-auto px-4 py-10 max-w-5xl">
+        <div class="text-center mb-12">
+            <h1 class="text-4xl font-extrabold text-slate-900 mb-4">Solved Assignments</h1>
+            <p class="text-lg text-slate-600">Access solved and reference assignments for your 3rd-semester subjects.</p>
+        </div>
 
-            <div class="content">
-<!-- 1- object oriented programming  -->
-
-                <section id="oop-papers" class="subject-section">
-                    <h2>Object Oriented Programming Assignment</h2>
-                    <p>Find All assignment related to oops here.</p>
-                    <!-- Links to past papers -->
-                    <a id="anote" href="pdfs/assignments/oop/oopass1.pdf"><b>Download:</b>OOP assignment 1</a><br>
-                    <a id="anote" href="pdfs/assignments/oop/OOPasg2.pdf"><b>Download:</b>OOP assignment 2</a><br>
-                    <a id="anote" href="pdfs/assignments/oop/OOPasg3.pdf"><b>Download:</b>OOP assignment 3</a><br>
-                    <a id="anote" href="pdfs/assignments/oop/OOPasg4.pdf"><b>Download:</b>OOP assignment 4</a><br>
-                
-                  
-                </section>
-
-<!-- 2- Comp. Organization & Assembly language  -->
-
-                <section id="coal-papers" class="subject-section">
-                    <h2>Comp. Organization & Assembly language assignments</h2>
-                    <p>Find assignments for COAL here.</p>
-                    <!-- Links to past papers -->
-
-                    <!-- <a id="anote" href="pdfs/past/digital logic design_1.pdf"><b>Download:</b>Digital Logic Design past papers All </a><br> -->
-
-                </section>
-
-<!-- 3- Calculus & Analytic Geometry -->
-
-                <section id="calculus-papers" class="subject-section">
-                    <h2>Calculus & Analytic Geometry assignments</h2>
-                    <p>Find assignments forCalculus & Analytic Geometry here.</p>
-                    <!-- Links to past papers -->
-
-                    <!-- <a id="anote" href="pdfs/past/2022 Past papers LINEAR ALGEBRA .pdf"><b>Download:</b>Past paper 2022 complete past papers All </a><br> -->
-                    
-                    <!-- <a href="#">Paper 3</a> -->
-                </section>
-
-<!-- 4- Professional Practices -->
-
-                <section id="Professional-Practices-papers" class="subject-section">
-                    <h2>Professional Practices assignment</h2>
-                    <p>Find Assignmets for Professional Practices here.</p>
-                    <!-- Links to past papers -->
-                    <a id="anote" href="pdfs/assignments/profession/pp1assignmnet.pdf"><b>Download:</b>Professional practice assignment 1</a><br>
-                    <a id="anote" href="pdfs/assignments/profession/ppasg3solved.pdf"><b>Download:</b>Professional practice asg# 3</a><br>
-                    <a id="anote" href="pdfs/assignments/profession/ppasg4solved.pdf"><b>Download:</b>Professional practice asg# 4</a><br>
-                </section>
-
-<!-- 5- Introduction to Economics -->
- 
-                <section id="economics" class="subject-section">
-                    <h2>Introduction to Economics assignments</h2>
-                    <p>Find assignments for Introduction to Economics here.</p>
-                    <!-- Links to past papers -->
-                    <a id="anote" href="pdfs/assignments/economics/econ asg1.pdf"><b>Download:</b> Economics assignment 1 </a><br>
-                  
-                </section>
-
-               
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            
+            <!-- OOP Assignments -->
+            <div class="bg-white p-6 rounded-xl shadow-md border border-slate-100">
+                <h2 class="text-2xl font-bold text-brand-dark mb-4 border-b pb-2"><i class="fas fa-code mr-2"></i> OOP (CC-211)</h2>
+                <div class="space-y-3">
+                    <a href="pdfs/assignments/oop/oopass1.pdf" target="_blank" class="flex items-center justify-between p-3 bg-slate-50 rounded hover:bg-brand hover:text-white transition group">
+                        <span class="text-sm font-medium">Assignment 1</span>
+                        <i class="fas fa-download text-brand group-hover:text-white"></i>
+                    </a>
+                    <a href="pdfs/assignments/oop/OOPasg2.pdf" target="_blank" class="flex items-center justify-between p-3 bg-slate-50 rounded hover:bg-brand hover:text-white transition group">
+                        <span class="text-sm font-medium">Assignment 2</span>
+                        <i class="fas fa-download text-brand group-hover:text-white"></i>
+                    </a>
+                    <a href="pdfs/assignments/oop/OOPasg3.pdf" target="_blank" class="flex items-center justify-between p-3 bg-slate-50 rounded hover:bg-brand hover:text-white transition group">
+                        <span class="text-sm font-medium">Assignment 3</span>
+                        <i class="fas fa-download text-brand group-hover:text-white"></i>
+                    </a>
+                    <a href="pdfs/assignments/oop/OOPasg4.pdf" target="_blank" class="flex items-center justify-between p-3 bg-slate-50 rounded hover:bg-brand hover:text-white transition group">
+                        <span class="text-sm font-medium">Assignment 4</span>
+                        <i class="fas fa-download text-brand group-hover:text-white"></i>
+                    </a>
+                </div>
             </div>
-        </div>
-    </div>
 
-    <footer>
-        <h2 class="footer_h2">2025 &copy; Sheri.in Design  All Rights Reserved.</h2>
-        <div class="footer-links">
-            <a id="footer-a" href="past_papers.html">Past-papers</a>
-            <a id="footer-a" href="faq.html">FAQ</a>
-            <a id="footer-a" href="contact.html">Contact Us</a>
-            <a id="footer-a" href="reviews.html">Reviews</a>
-        </div>
-        <div class="footer-contact">
-            <a style="color: white;" href="https://wa.me/+923486233198" target="_blank">
-                <i  class="fab fa-whatsapp"></i> Contact us on WhatsApp
-            </a>
-        </div>
-    </footer>
-    <!-- <script src="scripts.js"></script> -->
-    <script src="scripts.js"></script>
-    <!-- <script type="module" src="scripts.js"></script> -->
+            <!-- Professional Practices Assignments -->
+            <div class="bg-white p-6 rounded-xl shadow-md border border-slate-100">
+                <h2 class="text-2xl font-bold text-brand-dark mb-4 border-b pb-2"><i class="fas fa-briefcase mr-2"></i> Prof. Practices</h2>
+                <div class="space-y-3">
+                    <a href="pdfs/assignments/profession/pp1assignmnet.pdf" target="_blank" class="flex items-center justify-between p-3 bg-slate-50 rounded hover:bg-brand hover:text-white transition group">
+                        <span class="text-sm font-medium">Assignment 1</span>
+                        <i class="fas fa-download text-brand group-hover:text-white"></i>
+                    </a>
+                    <a href="pdfs/assignments/profession/ppasg3solved.pdf" target="_blank" class="flex items-center justify-between p-3 bg-slate-50 rounded hover:bg-brand hover:text-white transition group">
+                        <span class="text-sm font-medium">Assignment 3 (Solved)</span>
+                        <i class="fas fa-download text-brand group-hover:text-white"></i>
+                    </a>
+                    <a href="pdfs/assignments/profession/ppasg4solved.pdf" target="_blank" class="flex items-center justify-between p-3 bg-slate-50 rounded hover:bg-brand hover:text-white transition group">
+                        <span class="text-sm font-medium">Assignment 4 (Solved)</span>
+                        <i class="fas fa-download text-brand group-hover:text-white"></i>
+                    </a>
+                </div>
+            </div>
 
+            <!-- Economics Assignments -->
+            <div class="bg-white p-6 rounded-xl shadow-md border border-slate-100">
+                <h2 class="text-2xl font-bold text-brand-dark mb-4 border-b pb-2"><i class="fas fa-chart-line mr-2"></i> Economics</h2>
+                <div class="space-y-3">
+                    <a href="pdfs/assignments/economics/econ asg1.pdf" target="_blank" class="flex items-center justify-between p-3 bg-slate-50 rounded hover:bg-brand hover:text-white transition group">
+                        <span class="text-sm font-medium">Economics Assignment 1</span>
+                        <i class="fas fa-download text-brand group-hover:text-white"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </main>
 </body>
-
 </html>

@@ -1,89 +1,142 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reviews - BSCS Semester 3</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.0.2/dist/supabase.min.js"></script>
-
+    <title>Student Reviews | PU BSCS Hub</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script>
+        tailwind.config = { theme: { extend: { colors: { brand: { light: '#3b82f6', DEFAULT: '#1d4ed8', dark: '#1e3a8a' } } } } }
+    </script>
 </head>
+<body class="bg-slate-50 text-slate-800 font-sans flex flex-col min-h-screen">
 
-<body>
-    <header>
-        <h1>BSCS Semester 3</h1>
-        <nav class="top-nav">
-            <a href="index.html">Home</a>
-            <a href="past_papers.html">Past-papers</a>
-            <a href="assignment.html">Assignments</a>
-            <a href="contact.html">Contact Us</a>
-
-            <a href="reviews.html">Reviews</a>
-            <a href="faq.html">FAQ</a>
-        </nav>
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-xl font-bold text-brand-dark"><i class="fas fa-arrow-left mr-2"></i> Back to Hub</a>
+            <h1 class="font-bold text-slate-700 hidden md:block">Student Reviews</h1>
+        </div>
     </header>
 
-    <div class="container">
-        <div class="horizontal-layout">
-            <!-- <nav class="horizontal-nav">
-                <h2>Reviews</h2>
-                <a href="#write-review">Write a Review</a> <br>
-                <a href="#view-reviews">View Reviews</a>
-            </nav> -->
-            <p style="font-size: 20px;color: rgb(3, 26, 26);text-align: center;">
-                Guys be honest while giving a review. Your review is very helpful for us <br>
-                to build our website more releastic and user friendly. 
-            </p>
-              
-            <div class="content">
-                <section id="write-review" class="subject-section">
-                    <h2>Write a Review</h2>
-                    <form id="review-form">
-                        <input type="text" name="name" placeholder="Name" required>
-                        <textarea name="review" placeholder="Review" required></textarea>
-                        <input type="number" name="rating" placeholder="Rating" min="1" max="5" required>
-                        <button type="submit">Submit</button>
-                    </form>
-                </section>
+    <main class="flex-grow container mx-auto px-4 py-12 max-w-6xl">
+        <div class="text-center mb-12">
+            <h1 class="text-4xl font-extrabold text-slate-900 mb-4">What Students Are Saying</h1>
+            <p class="text-lg text-slate-600">Read reviews from fellow BSCS students or leave your own feedback.</p>
+        </div>
 
-                <section id="view-reviews" class="subject-section">
-                    <h2>View Reviews</h2>
-                    <p>Here you can view the reviews submitted by other users.</p>
-                    <!-- Example reviews -->
-                    <!-- <div class="review-item">
-                        <p><strong>John Doe</strong> (Rating: 4):</p>
-                        <p>Great resource for learning!</p>
+        <div class="grid lg:grid-cols-3 gap-8">
+            
+            <!-- Submit Review Form -->
+            <div class="lg:col-span-1 bg-white p-6 rounded-xl shadow-md border border-slate-100 h-fit sticky top-24">
+                <h3 class="text-xl font-bold text-slate-800 mb-4">Leave a Review</h3>
+                <form id="reviewForm" class="space-y-4">
+                    <div>
+                        <input type="text" id="reviewerName" placeholder="Your Name" class="w-full border border-slate-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-brand focus:border-brand outline-none" required>
                     </div>
-                    <div class="review-item">
-                        <p><strong>Jane Smith</strong> (Rating: 5):</p>
-                        <p>Highly recommended for anyone studying these subjects.</p>
-                    </div> -->
-                </section>
+                    <div>
+                        <select id="reviewRating" class="w-full border border-slate-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-brand outline-none" required>
+                            <option value="5">⭐⭐⭐⭐⭐ (5/5)</option>
+                            <option value="4">⭐⭐⭐⭐ (4/5)</option>
+                            <option value="3">⭐⭐⭐ (3/5)</option>
+                            <option value="2">⭐⭐ (2/5)</option>
+                            <option value="1">⭐ (1/5)</option>
+                        </select>
+                    </div>
+                    <div>
+                        <textarea id="reviewText" rows="3" placeholder="How did this site help you?" class="w-full border border-slate-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-brand focus:border-brand outline-none" required></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-brand hover:bg-brand-dark text-white font-bold py-2 px-4 rounded-lg transition-colors">
+                        Submit Review
+                    </button>
+                </form>
             </div>
-        </div>
-    </div>
 
-    <footer>
-        <h2 class="footer_h2">2025 &copy; Sheri.in Design  All Rights Reserved.</h2>
-        <div class="footer-links">
-            <a id="footer-a" href="past_papers.html">Past-papers</a>
-            <a id="footer-a" href="assignment.html">Assignments</a>
-            <a id="footer-a" href="faq.html">FAQ</a>
-            <a id="footer-a" href="contact.html">Contact Us</a>
-            <a id="footer-a" href="reviews.html">Reviews</a>
-        </div>
-        <div class="footer-contact">
-            <a style="color: white;" href="https://wa.me/+923486233198" target="_blank">
-                <i  class="fab fa-whatsapp"></i> Contact us on WhatsApp
-            </a>
-        </div>
-    </footer>
-    
-  <script src="review.js"></script>
-    <!-- <script src="scripts.js" ></script> -->
-    <!-- <script type="module" src="scripts.js"></scri> -->
+            <!-- Display Reviews Area -->
+            <div class="lg:col-span-2 space-y-4" id="reviewsContainer">
+                <!-- Reviews will be injected here by JavaScript -->
+            </div>
 
+        </div>
+    </main>
+
+    <script src="scripts.js"></script>
+    <script>
+        // Array of demo reviews with local names
+        const demoReviews = [
+            {
+                name: "Ali",
+                rating: 5,
+                text: "This website is a lifesaver for our 3rd-semester exams. The OOP notes are excellent and very easy to understand!"
+            },
+            {
+                name: "Ahmed",
+                rating: 4,
+                text: "Great collection of past papers. Helped me figure out the paper pattern for COAL. Would love to see more assignments uploaded."
+            },
+            {
+                name: "Bilal",
+                rating: 5,
+                text: "Thanks for the Calculus solution manual! Finding S.M Yousaf solutions for affiliated colleges was always a headache before this."
+            },
+            {
+                name: "Usman",
+                rating: 5,
+                text: "The exact syllabus breakdowns in one place saved me so much time. Highly recommended for all PU students."
+            }
+        ];
+
+        const reviewsContainer = document.getElementById('reviewsContainer');
+        const reviewForm = document.getElementById('reviewForm');
+
+        // Function to render reviews to the screen
+        function displayReviews() {
+            reviewsContainer.innerHTML = ''; // Clear container
+            
+            demoReviews.forEach(review => {
+                // Generate stars based on rating
+                const stars = '⭐'.repeat(review.rating);
+                
+                // Create HTML for each review card
+                const reviewCard = `
+                    <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100">
+                        <div class="flex justify-between items-center mb-3">
+                            <h4 class="font-bold text-slate-800 text-lg">${review.name}</h4>
+                            <span class="text-yellow-500 text-sm">${stars}</span>
+                        </div>
+                        <p class="text-slate-600 leading-relaxed">"${review.text}"</p>
+                    </div>
+                `;
+                reviewsContainer.innerHTML += reviewCard;
+            });
+        }
+
+        // Load reviews when page opens
+        displayReviews();
+
+        // Handle new review submission (Demo only - doesn't save to database)
+        reviewForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get values from form
+            const newName = document.getElementById('reviewerName').value;
+            const newRating = parseInt(document.getElementById('reviewRating').value);
+            const newText = document.getElementById('reviewText').value;
+
+            // Add to array at the top
+            demoReviews.unshift({
+                name: newName,
+                rating: newRating,
+                text: newText
+            });
+
+            // Re-render the list and reset form
+            displayReviews();
+            reviewForm.reset();
+            
+            alert("Thanks for your review! (Note: This is a demo version, so it won't be saved permanently).");
+        });
+    </script>
 </body>
-
 </html>

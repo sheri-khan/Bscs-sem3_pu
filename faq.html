@@ -1,72 +1,91 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FAQ - BSCS Semester 3</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>FAQ | PU BSCS Notes & Past Papers</title>
+    
+    <!-- Heavy SEO Meta Tags -->
+    <meta name="description" content="Answers to common questions about PU BSCS course outlines, 3rd-semester notes, and past papers (OOP, COAL, Calculus) for affiliated colleges.">
+    <meta name="keywords" content="pu bscs course outline, 3th semester bscs notes, oop past papers punjab university, cc 211 past papers, coal past papers, ms 251 past papers, bscs 1st semester past papers, pu syllabus for affiliated colleges">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script>
+        tailwind.config = { theme: { extend: { colors: { brand: { light: '#3b82f6', DEFAULT: '#1d4ed8', dark: '#1e3a8a' } } } } }
+    </script>
+    
+    <!-- JSON-LD Schema Markup for Google Rich Snippets (AI & Search Engines love this!) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Where can I find the official PU BSCS course outline for affiliated colleges?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You can find the complete Punjab University (PU) BSCS course outline and syllabus specifically designed for affiliated colleges on our dedicated Syllabus page."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are 3rd-semester BSCS notes available in PDF format?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, we offer comprehensive 3rd-semester BSCS notes in PDF format. This includes detailed notes and books for Object-Oriented Programming (OOP), Computer Organization and Assembly Language (COAL), and Calculus."
+          }
+        }
+      ]
+    }
+    </script>
 </head>
+<body class="bg-slate-50 text-slate-800 font-sans flex flex-col min-h-screen">
 
-<body>
-    <header>
-        <h1>BSCS Semester 3</h1>
-        <nav class="top-nav">
-            <a href="index.html">Home</a>
-            <a href="past_papers.html">Past-papers</a>
-            <a href="assignment.html">Assignments</a>
-            <a href="contact.html">Contact Us</a>
-            <a href="reviews.html">Reviews</a>
-            <a href="faq.html">FAQ</a>
-        </nav>
-      <link rel="stylesheet"  href="styles/faq.css">
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-xl font-bold text-brand-dark"><i class="fas fa-arrow-left mr-2"></i> Back to Hub</a>
+            <h1 class="font-bold text-slate-700 hidden md:block">Frequently Asked Questions</h1>
+        </div>
     </header>
 
-    <div class="container">
-        <section class="faq-section">
-           
-            <details>
-                <summary>1. What is the basic purpose of this website?</summary>
-                <p>This website is basically designed for all the students who feel difficulty in finding notes and past papers for their study.</p>
-              </details>
-          
-              <details>
-                <summary>2. What things are available on this website?</summary>
-                <p>Here you can get syllabus books, notes, and other relevant material for your study. This website is also updated from time to time as needed.</p>
-              </details>
-          
-              <details>
-                <summary>3. How can I access the notes and past papers?</summary>
-                <p>Notes and past papers for each subject are available on the respective subject pages. Simply navigate to the subject of interest.</p>
-              </details>
-          
-              <details>
-                <summary>4. How can I contact for further assistance?</summary>
-                <p>If you need additional help, please use the Contact Us page to get in touch.</p>
-              </details>
-        </section>
-    </div>
+    <main class="flex-grow container mx-auto px-4 py-12 max-w-4xl">
+        <div class="text-center mb-10">
+            <h1 class="text-4xl font-extrabold text-slate-900 mb-4">Frequently Asked Questions</h1>
+            <p class="text-lg text-slate-600">Answers to the most searched questions by Punjab University BSCS students.</p>
+        </div>
 
-    <footer style=" margin-bottom: 0%;
-                    margin-top: 70px;">
-         <h2 class="footer_h2">2025 &copy; Sheri.in Design  All Rights Reserved.</h2>
-         <div class="footer-links">
-             <a id="footer-a" href="past_papers.html">Past-papers</a>
-             <a id="footer-a" href="assignment.html">Assignments</a>
-             <a id="footer-a" href="faq.html">FAQ</a>
-             <a id="footer-a" href="contact.html">Contact Us</a>
-             <a id="footer-a" href="reviews.html">Reviews</a>
-         </div>
-         <div class="footer-contact">
-             <a style="color: white;" href="https://wa.me/+923486233198" target="_blank">
-                 <i  class="fab fa-whatsapp"></i> Contact us on WhatsApp
-             </a>
-         </div>
-    </footer>
-    <!-- <script src="scripts.js"></script> -->
+        <div class="space-y-4">
+            
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100">
+                <h3 class="text-lg font-bold text-slate-800 mb-2"><i class="fas fa-question-circle text-brand mr-2"></i> Where can I find the PU BSCS course outline for affiliated colleges?</h3>
+                <p class="text-slate-600">You can find the complete, official Punjab University (PU) BSCS course outline and syllabus breakdowns on our dedicated <a href="syllabus.html" class="text-brand font-semibold hover:underline">Course Outline</a> page. It covers all 3rd-semester subjects.</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100">
+                <h3 class="text-lg font-bold text-slate-800 mb-2"><i class="fas fa-question-circle text-brand mr-2"></i> Are 3rd-semester BSCS notes and 2nd-year computer notes free to download?</h3>
+                <p class="text-slate-600">Yes! We provide complete 3rd-semester BSCS notes, including lab manuals and reference books. All PDFs are 100% free to download from our <a href="notes.html" class="text-brand font-semibold hover:underline">Notes Repository</a>.</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100">
+                <h3 class="text-lg font-bold text-slate-800 mb-2"><i class="fas fa-question-circle text-brand mr-2"></i> Do you have OOP, COAL, and Calculus past papers?</h3>
+                <p class="text-slate-600">Absolutely. Our Past Papers archive includes OOP past papers for Punjab University (CC 211), COAL past papers (DC-221), and Calculus past papers (MS 251) to help you prepare for your final exams.</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100">
+                <h3 class="text-lg font-bold text-slate-800 mb-2"><i class="fas fa-question-circle text-brand mr-2"></i> Do you provide BSCS 1st semester past papers or 7th-semester notes?</h3>
+                <p class="text-slate-600">Currently, our primary focus is on the 3rd semester. However, we are actively working on expanding our database to include BSCS 1st semester past papers, 7th-semester notes, and other study materials for all PU affiliated colleges very soon.</p>
+            </div>
+            
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100">
+                <h3 class="text-lg font-bold text-slate-800 mb-2"><i class="fas fa-question-circle text-brand mr-2"></i> Is this an official Punjab University website?</h3>
+                <p class="text-slate-600">No. This platform is an independent educational initiative created by a dedicated student to support peers in PU affiliated colleges. It is not officially endorsed by Punjab University.</p>
+            </div>
+
+        </div>
+    </main>
+
     <script src="scripts.js"></script>
-    <!-- <script type="module" src="scripts.js"></script> -->
-
 </body>
-
 </html>

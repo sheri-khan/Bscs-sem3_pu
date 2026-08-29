@@ -1,0 +1,66 @@
+Microsoft Windows [Version 10.0.26200.9278]
+(c) Microsoft Corporation. All rights reserved.
+
+D:\coding\github project\Bscs-sem3_pu>tree /f
+Folder PATH listing for volume D drive
+Volume serial number is 4816-4EE8
+D:.
+│   assignment.html
+│   contact.html
+│   contact.js
+│   faq.html
+│   index.html
+│   past_papers.html
+│   review.js
+│   reviews.html
+│   scripts.js
+│   styles.css
+│
+├───images
+│       calculus.png
+│       coal.png
+│       coal_lab.png
+│       economic.png
+│       oop.png
+│       oop_lab.png
+│       professional.png
+│
+├───pdfs
+│   ├───assignments
+│   │   ├───economics
+│   │   │       econ asg1.pdf
+│   │   │
+│   │   ├───oop
+│   │   │       OOPasg2.pdf
+│   │   │       OOPasg3.pdf
+│   │   │       OOPasg4.pdf
+│   │   │       oopass1.pdf
+│   │   │
+│   │   └───profession
+│   │           pp1assignmnet.pdf
+│   │           ppasg3solved.pdf
+│   │           ppasg4solved.pdf
+│   │
+│   ├───calculus
+│   │       (Solution Book) Calculus and Analytical Geometry by S.M Yousaf.pdf
+│   │       mathematical methods by SM Yusuf.pdf
+│   │
+│   ├───coal
+│   │       All Assembly Programs Solution.pdf
+│   │       COAL Lab Manual.pdf
+│   │
+│   ├───ecnomics
+│   │       ecno_assin1.pdf
+│   │
+│   ├───oop
+│   │       Robert Lafore OOP.pdf
+│   │       Starting Out with C++ From Control Structures through Objects (Tony Gaddis) (z-lib.org).pdf
+│   │
+│   └───profession
+│           pp notes.docx
+│
+└───styles
+        faq.css
+
+
+D:\coding\github project\Bscs-sem3_pu>

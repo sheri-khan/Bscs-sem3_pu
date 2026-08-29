@@ -1,73 +1,47 @@
+// scripts.js - Core UI functionality
 
+document.addEventListener('DOMContentLoaded', () => {
+    
+    // --- Mobile Hamburger Menu Logic ---
+    const mobileMenuBtn = document.querySelector('button.md\\:hidden');
+    const desktopNav = document.querySelector('nav');
+    const contactBtn = document.querySelector('header a.hidden.md\\:inline-block');
 
+    if (mobileMenuBtn && desktopNav) {
+        mobileMenuBtn.addEventListener('click', () => {
+            
+            // Toggle the display properties for the navigation menu
+            desktopNav.classList.toggle('hidden');
+            desktopNav.classList.toggle('flex');
+            desktopNav.classList.toggle('flex-col');
+            
+            // Add mobile-specific styling (absolute positioning, background, spacing)
+            desktopNav.classList.toggle('absolute');
+            desktopNav.classList.toggle('top-[72px]'); // Positions it right below the header
+            desktopNav.classList.toggle('left-0');
+            desktopNav.classList.toggle('w-full');
+            desktopNav.classList.toggle('bg-white');
+            desktopNav.classList.toggle('shadow-lg');
+            desktopNav.classList.toggle('p-6');
+            desktopNav.classList.toggle('border-t');
+            
+            // Toggle the contact button visibility inside the mobile menu
+            if (contactBtn) {
+                contactBtn.classList.toggle('hidden');
+                contactBtn.classList.toggle('block');
+                contactBtn.classList.toggle('text-center');
+                contactBtn.classList.toggle('mt-4');
+            }
 
-// Import the Supabase JavaScript client from CDN
-const supabaseUrl = 'https://jbtnkaqzfknnyczrldtd.supabase.co';
-const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImpidG5rYXF6ZmtubnljenJsZHRkIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MjQ5MzA0NzAsImV4cCI6MjA0MDUwNjQ3MH0.A-emTwQ5qWSZyjYcGXi2aZxMOlAp1rYVPmAD6UrNogY';
-
-// Function to load the Supabase script dynamically
-function loadSupabaseScript(callback) {
-  const script = document.createElement('script');
-  script.src = 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.0.2/dist/supabase.min.js'; // Updated URL
-  document.head.appendChild(script);
-
-  function checkSupabaseLoaded() {
-    if (window.supabase) {
-      callback();
-    } else {
-      setTimeout(checkSupabaseLoaded, 100); // wait for 100ms and try again
+            // Animate the icon (Switch from Hamburger 'bars' to 'times' cross)
+            const icon = mobileMenuBtn.querySelector('i');
+            if (icon.classList.contains('fa-bars')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            } else {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        });
     }
-  }
-
-  checkSupabaseLoaded();
-}
-
-// Initialize Supabase and handle form submissions
-loadSupabaseScript(() => {
-  const { createClient } = window.supabase;
-  const supabase = createClient(supabaseUrl, supabaseKey);
-
-  // Contact Us form submission handler
-  document.getElementById('contact-form').addEventListener('submit', async (e) => {
-    e.preventDefault();
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    const message = document.getElementById('message').value;
-
-    try {
-      const { data, error } = await supabase
-        .from('inquries')
-        .insert([{ name, email, message }]);
-
-      if (error) {
-        alert('Error submitting contact form: ' + error.message);
-      } else {
-        alert('Contact submission successful!');
-      }
-    } catch (error) {
-      alert('Unexpected error: ' + error.message);
-    }
-  });
-
-  // Review form submission handler
-  document.getElementById('review-form').addEventListener('submit', async (e) => {
-    e.preventDefault();
-    const name = document.getElementById('name').value;
-    const review = document.getElementById('review').value;
-    const rating = document.getElementById('rating').value;
-
-    try {
-      const { data, error } = await supabase
-        .from('reviews')
-        .insert([{ name, review, rating }]);
-
-      if (error) {
-        alert('Error submitting review: ' + error.message);
-      } else {
-        alert('Review submission successful!');
-      }
-    } catch (error) {
-      alert('Unexpected error: ' + error.message);
-    }
-  });
 });

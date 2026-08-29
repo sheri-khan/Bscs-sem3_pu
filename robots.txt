@@ -1,0 +1,6 @@
+# Tells all search engine bots to crawl this site
+User-agent: *
+Allow: /
+
+# Points bots directly to your roadmap
+Sitemap: https://sheri-khan.github.io/Bscs-sem3_pu/sitemap.xml

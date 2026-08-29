@@ -1,229 +1,158 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
-    <meta name="google-site-verification" content="qmWpp4QxseVLRlKFgXM3uTdp1TxZIzea4QRMFu6TYP0" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BSCS Semester 3</title>
-    <link rel="stylesheet" href="styles.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    -
+    <meta name="google-site-verification" content="qmWpp4QxseVLRlKFgXM3uTdp1TxZIzea4QRMFu6TYP0" />
     <meta name="mobile-web-app-capable" content="yes">
-    <!-- Description (Short summary of your website) -->
-    <meta name="description" content="Find BSCS Semester 3 notes, past papers, and educational resources. Enhance your learning journey with our helpful content.">
-
-    <!-- Keywords (Relevant search terms) -->
-    <meta name="keywords" content="BSCS, Semester 3, Notes, Past Papers, Punjab University, Programming Fundamentals, Linear Algebra, Educational Resources">
-
-    <!-- Author -->
+    
+    <!-- Updated SEO Meta Tags for Homepage -->
+    <title>BSCS Punjab University Affiliated Colleges | Study Materials & Notes</title>
+    <meta name="description" content="The ultimate resource for BSCS students of Punjab University affiliated colleges. Find course outlines, semester notes, past papers, and assignments.">
+    <meta name="keywords" content="BSCS, Punjab University, affiliated colleges, bscs 3rd semester subjects, course outline, past papers, notes">
     <meta name="author" content="Sheri Khan">
-
-    <!-- Robots (Tells search engines to index your site and follow links) -->
     <meta name="robots" content="index, follow">
 
-
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
+    <!-- Custom Brand Colors -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            light: '#3b82f6', // blue-500
+                            DEFAULT: '#1d4ed8', // blue-700
+                            dark: '#1e3a8a', // blue-900
+                        }
+                    }
+                }
+            }
+        }
+    </script>
 </head>
 
-<body>
-    <header>
-        <h1 class="header-h1"> BSCS Semester 3 </h1>
-        <h2 id="sub-heading" style="font-size: 20px;">A parts of BSCS semester series</h2>
-        <nav class="top-nav">
-            <a href="index.html">Home</a>
-            <a href="past_papers.html">Past-papers</a>
-            <a href="assignment.html">Assignments</a>
-            <a href="contact.html">Contact Us</a>
-            <a href="reviews.html">Reviews</a>
-            <a href="faq.html">FAQ</a>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased flex flex-col min-h-screen">
 
-        </nav>
+    <!-- Navbar -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-4 md:px-8 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-extrabold text-brand-dark tracking-tight">
+                PU <span class="text-brand">BSCS Hub</span>
+            </a>
+            
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex gap-6 font-medium text-slate-600">
+                <a href="syllabus.html" class="hover:text-brand transition-colors">Course Outline</a>
+                <a href="notes.html" class="hover:text-brand transition-colors">Semester Notes</a>
+                <a href="past_papers.html" class="hover:text-brand transition-colors">Past Papers</a>
+                <a href="assignment.html" class="hover:text-brand transition-colors">Assignments</a>
+                <a href="bscs-guide.html" class="text-brand font-bold hover:text-brand-dark transition-colors">
+        <i class="fas fa-map-signs mr-1"></i> Degree Roadmap
+    </a>
+            </nav>
+
+            <a href="contact.html" class="hidden md:inline-block bg-brand hover:bg-brand-dark text-white px-5 py-2 rounded-full transition-all shadow-md font-medium">
+                Contact Us
+            </a>
+            
+            <!-- Mobile Menu Button (Requires JS for toggle in production) -->
+            <button class="md:hidden text-slate-600 text-2xl">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
     </header>
 
-
-    <div class="main-container">
-        <aside class="sidebar">
-            <h2 id="sidebar-h2">Subjects</h2>
-            <a href="#oop">Object Oriented Programming</a>
-            <a href="#coal">Comp. Organization & Assembly language</a>
-            <a href="#calculus">Calculus & Analytic Geometry</a>
-            <a href="#Professional-Practices">Professional Practices</a>
-            <a href="#economics">Introduction to Economics</a>
-
-        </aside>
-
-        <div class="content">
-
-
-
-            <h1 class="content_h1">Introduction</h1>
-            <p class="content_p">This website is designed exclusively for the <b>affiliated colleges</b> of <b>Punjab
-                    University</b>, offering a valuable resource <br>tailored to meet the academic needs of our
-                community.
-                Developed independently by a dedicated student,<br> this platform operates without affiliation or
-                endorsement from any official authorities.
-                <br>
-                <br>
-                For any inquiries or additional information, please feel free to reach out to us at your convenience.
-                <br>
-                Now, let's embark on a journey into the vast world of computer science, where opportunities abound and
-                the future is yours to secure.
-            </p>
-
-            <!-- 1- object oriented programming  -->
-            <section id="oop" class="subject-section">
-                <h2>Object Oriented Programming (CC-211) </h2>
-                <h4>Object Oriented Programming Syllabus</h4>
-                <img src="images/oop.png" alt="objecr oriented  Syllabus">
-
-                <h4> LAB Object Oriented Programming Syllabus</h4>
-
-                <img src="images/oop_lab.png" alt="object oriented lab syllabus">
-                <div id="notes">
-
-                    <h5>Notes for OOP</h5>
-
-                    <!-- Links to notes and past papers -->
-                    <a id="anote" target="_blank"
-                        href="pdfs/Programming/Starting Out with C++ From Control Structures through Objects (Tony Gaddis) (z-lib.org)-1-1242_compressed.pdf"><b>Download:</b>
-                        1-C++ book by Tony Gaddis</a id="anote">
-                    <h1 id="notes-youtube-link">Watch helping videos</h1>
-                    <!-- youtube vide link  -->
-                    <div id="notes-youtube-link-here">
-                        <a id="notes-youtube-link-here-a" href="https://youtu.be/j8nAHeVKL08?si=-oR4c7WavHWo_osi"
-                            target="_blank">
-                            <b>Watch:</b>Complete c++ course by code with harry in hindi and urdu </a>
-                        <a id="notes-youtube-link-here-a" href="https://youtu.be/13ocRMSJy5M?si=jF-tRpng3JBBqDJH"
-                            target="_blank">
-                            <b>Watch:</b>Use of Arrays there functions . How to find elemnt in Array </a>
-
-                    </div>
+    <!-- Hero Section -->
+    <main class="flex-grow">
+        <section class="bg-gradient-to-br from-brand-dark to-brand text-white py-20 px-4">
+            <div class="container mx-auto max-w-4xl text-center">
+                <span class="bg-white/20 text-blue-100 text-sm font-semibold px-4 py-1 rounded-full uppercase tracking-wider mb-6 inline-block">For Affiliated Colleges</span>
+                <h1 class="text-4xl md:text-6xl font-extrabold mb-6 leading-tight">
+                    Ace Your BSCS Degree with Top-Tier Resources
+                </h1>
+                <p class="text-lg md:text-xl text-blue-100 mb-10 max-w-2xl mx-auto leading-relaxed">
+                    Access complete course outlines, detailed semester notes, and an archive of past papers for Punjab University students.
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                    <a href="notes.html" class="bg-white text-brand-dark font-bold text-lg px-8 py-4 rounded-full shadow-lg hover:bg-slate-100 transition-transform transform hover:-translate-y-1">
+                        <i class="fas fa-book-open mr-2"></i> Get Semester Notes
+                    </a>
+                    <a href="past_papers.html" class="bg-transparent border-2 border-white text-white font-bold text-lg px-8 py-4 rounded-full hover:bg-white/10 transition-colors">
+                        <i class="fas fa-file-alt mr-2"></i> View Past Papers
+                    </a>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <!-- 2- Comp. Organization & Assembly language  -->
-            <section id="coal" class="subject-section">
-                <h2>Comp. Organization & Assembly language(DC-221) </h2>
-                <h4>Comp. Organization & Assembly language syllabus</h4>
-                <img src="images/coal.png" alt="coal syllabus">
-
-                <h4> LAB Comp. Organization & Assembly language syllabus</h4>
-                <img src="images/coal_lab.png" alt=" coal syllabus">
-                <div id="notes">
-                    <h5>Notes for Comp. Organization & Assembly language</h5>
-                    <!-- Links to notes and past papers -->
-                    <a id="anote" href="pdfs/coal/All Assembly Programs Solution.pdf" target="_blank"><b>Download:</b> All basic programs of assembly languages</a id="anote">
-                    <a id="anote" href="pdfs/coal/COAL Lab Manual.pdf" target="_blank"><b>Download:</b> COAL Lab Manual complete syllabus</a id="anote">
-
-                    <h1 id="notes-youtube-link">Watch helping videos</h1>
-                    <div id="notes-youtube-link-here">
-                        <a id="notes-youtube-link-here-a" href="https://youtu.be/_BpOV3G1-m0?si=NtV5qFAFZcEuTxJY"
-                            target="_blank"><b>Watch:</b>Assembly language complete course with notes </a>
+        <!-- Quick Access Resource Cards -->
+        <section class="container mx-auto px-4 md:px-8 py-16 -mt-10">
+            <div class="grid md:grid-cols-3 gap-6">
+                <!-- Card 1 -->
+                <div class="bg-white rounded-2xl shadow-xl p-8 border border-slate-100 hover:shadow-2xl transition-shadow flex flex-col items-center text-center">
+                    <div class="bg-blue-100 text-brand p-4 rounded-full mb-6">
+                        <i class="fas fa-list-ul text-3xl"></i>
                     </div>
+                    <h3 class="text-2xl font-bold text-slate-800 mb-3">Course Outlines</h3>
+                    <p class="text-slate-600 mb-6 flex-grow">Official PU syllabus breakdowns for every subject to keep you on track.</p>
+                    <a href="syllabus.html" class="text-brand font-semibold hover:underline">View Syllabus &rarr;</a>
                 </div>
-            </section>
 
-            <!-- 3- Calculus & Analytic Geometry -->
-            <section id="calculus" class="subject-section">
-                <h2>Calculus & Analytic Geometry (MS-251) </h2>
-                <h4>Calculus & Analytic Geometry syallabus</h4>
-                <img src="images/calculus.png" alt="calculus syllabus">
-                <div id="notes">
-                    <h5>Notes for Calculus & Analytic Geometry</h5>
-
-
-
-                    <a id="anote"
-                        href="pdfs/calculus/(Solution Book) Calculus and Analytical Geometry by S.M Yousaf.pdf"
-                        target="_blank"><b>Download:</b>Solution for calculus and analytic Geometry book complete</a
-                        id="anote">
-
-                    <h1 id="notes-youtube-link">Watch helping videos</h1>
-                    <div id="notes-youtube-link-here">
-                        <a id="notes-youtube-link-here-a"
-                            href="https://youtube.com/playlist?list=PLF1D-hulhAg5cBHf27fB42lf5ZcAaPwVO&si=WDmegjh_q3AGMtpv"
-                            target="_blank"><b>Watch:</b> Calculus & Analytic geometry question with solution</a>
-                        <a id="notes-youtube-link-here-a"
-                            href="https://youtube.com/playlist?list=PLaEKsRk2Nd792XnQOBaKoLtTivT8dhBH0&si=gu1IA74WfvCbk6dn"
-                            target="_blank"><b>Watch:</b> 2-Calculus & Analytic geometry question with solution</a>
-                        <a id="notes-youtube-link-here-a"
-                            href="https://youtube.com/playlist?list=PLglNsQ4semr8CqaBL6hV_cFFtEZ76sEfa&si=XIrJgR8yJQqihkKq"
-                            target="_blank"><b>Watch:</b> 3-Calculus & Analytic geometry question with solution</a>
-
-
+                <!-- Card 2 -->
+                <div class="bg-white rounded-2xl shadow-xl p-8 border border-slate-100 hover:shadow-2xl transition-shadow flex flex-col items-center text-center">
+                    <div class="bg-green-100 text-green-600 p-4 rounded-full mb-6">
+                        <i class="fas fa-download text-3xl"></i>
                     </div>
+                    <h3 class="text-2xl font-bold text-slate-800 mb-3">Study Notes</h3>
+                    <p class="text-slate-600 mb-6 flex-grow">Comprehensive PDF notes, lab manuals, and recommended books.</p>
+                    <a href="notes.html" class="text-green-600 font-semibold hover:underline">Download Notes &rarr;</a>
                 </div>
-            </section>
 
-            <!-- 4- Professional Practices -->
-            <section id="Professional-Practices" class="subject-section">
-                <h2>Professional Practices (GE-261) </h2>
-                <h4>Professional Practices Syllabus</h4>
-                <img src="images/professional.png" alt="professional Practices">
-                <div id="notes">
-                    <h5>Notes for Professional Practices</h5>
-
-                    <!-- <a id="anote" href="pdfs/English/Bussiness Communication.pdf" target="_blank"><b>Download:</b>1-Business and communication</a id="anote">  -->
-
-
-                    <!-- Links to notes and past papers -->
-                    <h1 id="notes-youtube-link">Watch helping videos</h1>
-                    <div id="notes-youtube-link-here">
-                        <a id="notes-youtube-link-here-a" href="https://youtube.com/playlist?list=PLRMdInXAySPj5N9qGADj0hVotC1UNBphQ&si=ZpQSCqHRhjPMjye4" target="_blank" ><b>Watch:</b>Professional pratices playlist with zeeshan khalid </a>
+                <!-- Card 3 -->
+                <div class="bg-white rounded-2xl shadow-xl p-8 border border-slate-100 hover:shadow-2xl transition-shadow flex flex-col items-center text-center">
+                    <div class="bg-purple-100 text-purple-600 p-4 rounded-full mb-6">
+                        <i class="fas fa-history text-3xl"></i>
                     </div>
+                    <h3 class="text-2xl font-bold text-slate-800 mb-3">Past Papers</h3>
+                    <p class="text-slate-600 mb-6 flex-grow">Prepare for exams effectively with our collection of previous years' papers.</p>
+                    <a href="past_papers.html" class="text-purple-600 font-semibold hover:underline">Browse Papers &rarr;</a>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <!-- 5- Introduction to Economics -->
-            <section id="economics" class="subject-section">
-                <h2>Introduction to Economics (UE-171) </h2>
-                <h4>Introduction to Economics Syllabus</h4>
-                <img src="images/economic.png" alt="pakistan study syllabus">
-                <div id="notes">
-                    <h5>Notes for Introduction to Economics</h5>
-                    <!-- Links to notes and past papers -->
-                    <!-- <a id="anote" href="pdfs/Pakstudy/pakistan studies.pdf" target="_blank"><b>Download:</b>1-pak study notes in urdu</a id="anote">  -->
-
-                    <h1 id="notes-youtube-link">Watch helping videos</h1>
-                    <div id="notes-youtube-link-here">
-                        <a id="notes-youtube-link-here-a" href="https://youtube.com/playlist?list=PLSQl0a2vh4HDERCw_ddanXbsDpFWcpL-S&si=Hn94OxBYEZc_Rzk7" target="_blank" ><b>Watch:</b>Economics understandings </a> 
-                        
-                        <a id="notes-youtube-link-here-a" href="https://youtu.be/K66ulghk9lY?si=LcG-Hvu5ElW3BrHy" target="_blank" ><b>Watch:</b>2-Economics understandings </a>
-                    </div>
+        <!-- Current Semester Focus (3rd Semester) -->
+        <section class="bg-slate-100 py-16">
+            <div class="container mx-auto px-4 md:px-8 text-center max-w-3xl">
+                <h2 class="text-3xl font-bold text-slate-800 mb-4">Currently Featuring: 3rd Semester</h2>
+                <p class="text-slate-600 mb-10">We are currently focused on providing the best materials for the 3rd semester, covering these core course codes.</p>
+                
+                <div class="flex flex-wrap justify-center gap-3">
+                    <span class="bg-white border border-slate-200 text-slate-700 px-4 py-2 rounded-lg shadow-sm font-medium">CC-211 (OOP)</span>
+                    <span class="bg-white border border-slate-200 text-slate-700 px-4 py-2 rounded-lg shadow-sm font-medium">DC-221 (COAL)</span>
+                    <span class="bg-white border border-slate-200 text-slate-700 px-4 py-2 rounded-lg shadow-sm font-medium">MS-251 (Calculus)</span>
+                    <span class="bg-white border border-slate-200 text-slate-700 px-4 py-2 rounded-lg shadow-sm font-medium">GE-261 (Prof. Practices)</span>
+                    <span class="bg-white border border-slate-200 text-slate-700 px-4 py-2 rounded-lg shadow-sm font-medium">UE-171 (Economics)</span>
                 </div>
-            </section>
+            </div>
+        </section>
+    </main>
 
-
-
-        </div>
-    </div>
-    <!-- footer  -->
-    <footer>
-        <h2 class="footer_h2">2025 &copy; Sheri.in Design All Rights Reserved.</h2>
-        <div class="footer-links">
-            <a id="footer-a" href="past_papers.html">Past-papers</a>
-            <a id="footer-a" href="assignment.html">Assignments</a>
-            <a id="footer-a" href="faq.html">FAQ</a>
-            <a id="footer-a" href="contact.html">Contact Us</a>
-            <a id="footer-a" href="reviews.html">Reviews</a>
-        </div>
-        <div class="footer-contact">
-            <a style="color: white;" href="https://wa.me/+923290330234" target="_blank">
-                <i class="fab fa-whatsapp"></i> Contact us on WhatsApp
-            </a>
+    <!-- Minimal Footer -->
+    <footer class="bg-slate-900 text-slate-400 py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p class="mb-4">&copy; 2026 Sheri. All rights are reserved.</p>
+            <div class="flex justify-center gap-4 text-sm">
+                <a href="faq.html" class="hover:text-white transition">FAQ</a>
+                <a href="reviews.html" class="hover:text-white transition">Reviews</a>
+                <a href="contact.html" class="hover:text-white transition">Contact</a>
+            </div>
         </div>
     </footer>
 
     <script src="scripts.js"></script>
-    <!-- <script type="module" src="scripts.js"></script> -->
-
-    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.2/dist/supabase.js"></script>
-    <script type="module" src="scripts.js"></script>
-
-    <script src="update.js"></script>
-
 </body>
-
 </html>

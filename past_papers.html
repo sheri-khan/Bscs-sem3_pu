@@ -1,112 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Past Papers - BSCS Semester 3</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>BSCS Past Papers Punjab University | OOP, COAL, Calculus</title>
+    <meta name="description" content="Download BSCS past papers for Punjab University affiliated colleges. Includes OOP past papers, CC 211 past papers, COAL, and MS 251 past papers.">
+    <meta name="keywords" content="bscs past papers punjab university, oop past papers punjab university, cc 211 past papers, coal past papers, ms 251 past papers, bscs 1st semester past papers">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script>
+        tailwind.config = { theme: { extend: { colors: { brand: { light: '#3b82f6', DEFAULT: '#1d4ed8', dark: '#1e3a8a' } } } } }
+    </script>
 </head>
+<body class="bg-slate-50 text-slate-800 font-sans flex flex-col min-h-screen">
 
-<body>
-    <header>
-        <h1>BSCS Semester 3</h1>
-        <nav class="top-nav">
-            <a href="index.html">Home</a>
-            <a href="past_papers.html">Past-papers</a>
-            <a href="assignment.html">Assignments</a>
-            <a href="contact.html">Contact Us</a>
-            <a href="reviews.html">Reviews</a>
-            <a href="faq.html">FAQ</a>
-        </nav>
+    <!-- Navbar -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-xl font-bold text-brand-dark"><i class="fas fa-arrow-left mr-2"></i> Back to Hub</a>
+            <h1 class="font-bold text-slate-700 hidden md:block">Past Papers Archive</h1>
+        </div>
     </header>
 
-    <div class="container">
-        <div class="horizontal-layout">
-            <nav class="horizontal-nav">
-                <h2 id="horizontal-nav_h2">Past Papers</h2>
-                <a id="past-paper-nav" href="#oop-papers">Object Oriented Programming</a>
-                <a id="past-paper-nav" href="#coal-papers">Comp. Organization & Assembly language</a>
-                <a id="past-paper-nav" href="#calculus-papers">Calculus & Analytic Geometry</a>
-                <a id="past-paper-nav" href="#Professional-Practices-papers">Professional Practices</a>
-                <a id="past-paper-nav" href="#economics-papers">Introduction to Economics</a>
-               
-            </nav>
+    <main class="flex-grow container mx-auto px-4 py-10 max-w-4xl">
+        <div class="text-center mb-12">
+            <span class="bg-purple-100 text-purple-700 text-sm font-semibold px-4 py-1 rounded-full uppercase tracking-wider mb-4 inline-block">Exam Prep</span>
+            <h1 class="text-4xl font-extrabold text-slate-900 mb-4">BSCS Past Papers Punjab University</h1>
+            <p class="text-lg text-slate-600">The ultimate archive of previous examination papers for affiliated colleges.</p>
+        </div>
 
-            <div class="content">
-<!-- 1- object oriented programming  -->
-
-                <section id="oop-papers" class="subject-section">
-                    <h2>Object Oriented Programming Past Papers</h2>
-                    <p>Find past papers for Object Oriented Programming here.</p>
-                    <!-- Links to past papers -->
-                    <!-- <a id="anote" href="pdfs/past/programming fundamental_1.pdf"><b>Download:</b>Programming Fundamental past papers All</a><br> -->
-                  
-                </section>
-
-<!-- 2- Comp. Organization & Assembly language  -->
-
-                <section id="coal-papers" class="subject-section">
-                    <h2>Comp. Organization & Assembly language Past Papers</h2>
-                    <p>Find past papers for COAL here.</p>
-                    <!-- Links to past papers -->
-                    <!-- <a id="anote" href="pdfs/past/digital logic design_1.pdf"><b>Download:</b>Digital Logic Design past papers All </a><br> -->
-            </section>
-
-<!-- 3- Calculus & Analytic Geometry -->
-
-                <section id="calculus-papers" class="subject-section">
-                    <h2>Calculus & Analytic Geometry Past Papers</h2>
-                    <p>Find past papers forCalculus & Analytic Geometry here.</p>
-                    <!-- Links to past papers -->
-                    <!-- <a id="anote" href="pdfs/past/2022 Past papers LINEAR ALGEBRA .pdf"><b>Download:</b>Past paper 2022 complete past papers All </a><br> -->
-                    
-                    <!-- <a href="#">Paper 3</a> -->
-                </section>
-
-<!-- 4- Professional Practices -->
-
-                <section id="Professional-Practices-papers" class="subject-section">
-                    <h2>Professional Practices Past Papers</h2>
-                    <p>Find past papers for Professional Practices here.</p>
-                    <!-- Links to past papers -->
-                    <!-- <a id="anote" href="pdfs/past/communication and presentation skills.pdf"><b>Download:</b>Communication and presentation skills past paper all</a><br> -->
-                </section>
-
-<!-- 5- Introduction to Economics -->
- 
-                <section id="economics" class="subject-section">
-                    <h2>Introduction to Economics Past Papers</h2>
-                    <p>Find past papers for Introduction to Economics here.</p>
-                    <!-- Links to past papers -->
-                    <!-- <a id="anote" href="pdfs/past/pak study past paper.pdf"><b>Download:</b> Pak study past paper in urdu & English </a><br> -->
-                  
-                </section>
-
-               
+        <div class="space-y-8">
+            
+            <!-- OOP Past Papers -->
+            <div class="bg-white p-6 rounded-xl shadow-md border-l-4 border-brand-dark">
+                <div class="flex items-center gap-3 mb-4">
+                    <i class="fas fa-file-alt text-2xl text-brand"></i>
+                    <h2 class="text-2xl font-bold text-slate-800">OOP Past Papers (CC-211)</h2>
+                </div>
+                <p class="text-slate-600 mb-4 text-sm">Download object-oriented programming past papers for Punjab University (CC-211).</p>
+                <div class="grid sm:grid-cols-2 gap-4">
+                    <!-- PLACEHOLDERS: Replace '#' with actual PDF paths when you upload them -->
+                    <a href="#" class="border border-slate-200 p-3 rounded flex justify-between items-center hover:bg-slate-50 transition text-brand font-medium">
+                        2023 OOP Final Paper <i class="fas fa-lock text-slate-400" title="Upload Pending"></i>
+                    </a>
+                    <a href="#" class="border border-slate-200 p-3 rounded flex justify-between items-center hover:bg-slate-50 transition text-brand font-medium">
+                        2022 OOP Final Paper <i class="fas fa-lock text-slate-400" title="Upload Pending"></i>
+                    </a>
+                </div>
             </div>
-        </div>
-    </div>
 
-    <footer>
-        <h2 class="footer_h2">2025 &copy; Sheri.in Design  All Rights Reserved.</h2>
-        <div class="footer-links">
-            <a id="footer-a" href="past_papers.html">Past-papers</a>
-            <a id="footer-a" href="assignment.html">Assignments</a>
-            <a id="footer-a" href="faq.html">FAQ</a>
-            <a id="footer-a" href="contact.html">Contact Us</a>
-            <a id="footer-a" href="reviews.html">Reviews</a>
-        </div>
-        <div class="footer-contact">
-            <a style="color: white;" href="https://wa.me/+923486233198" target="_blank">
-                <i  class="fab fa-whatsapp"></i> Contact us on WhatsApp
-            </a>
-        </div>
-    </footer>
-    <!-- <script src="scripts.js"></script> -->
-    <script src="scripts.js"></script>
-    <!-- <script type="module" src="scripts.js"></script> -->
+            <!-- COAL Past Papers -->
+            <div class="bg-white p-6 rounded-xl shadow-md border-l-4 border-green-600">
+                <div class="flex items-center gap-3 mb-4">
+                    <i class="fas fa-file-alt text-2xl text-green-600"></i>
+                    <h2 class="text-2xl font-bold text-slate-800">COAL Past Papers (DC-221)</h2>
+                </div>
+                <p class="text-slate-600 mb-4 text-sm">Computer Organization and Assembly Language previous exam papers.</p>
+                <div class="grid sm:grid-cols-2 gap-4">
+                    <!-- PLACEHOLDERS: Replace '#' with actual PDF paths when you upload them -->
+                    <a href="#" class="border border-slate-200 p-3 rounded flex justify-between items-center hover:bg-slate-50 transition text-green-700 font-medium">
+                        2023 COAL Final Paper <i class="fas fa-lock text-slate-400"></i>
+                    </a>
+                </div>
+            </div>
 
+            <!-- Calculus Past Papers -->
+            <div class="bg-white p-6 rounded-xl shadow-md border-l-4 border-orange-500">
+                <div class="flex items-center gap-3 mb-4">
+                    <i class="fas fa-file-alt text-2xl text-orange-500"></i>
+                    <h2 class="text-2xl font-bold text-slate-800">Calculus Past Papers (MS-251)</h2>
+                </div>
+                <p class="text-slate-600 mb-4 text-sm">Download Calculus and Analytic Geometry (MS-251) past papers.</p>
+                <div class="grid sm:grid-cols-2 gap-4">
+                    <!-- PLACEHOLDERS: Replace '#' with actual PDF paths when you upload them -->
+                    <a href="#" class="border border-slate-200 p-3 rounded flex justify-between items-center hover:bg-slate-50 transition text-orange-600 font-medium">
+                        2023 Calculus Final Paper <i class="fas fa-lock text-slate-400"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </main>
 </body>
-
 </html>
